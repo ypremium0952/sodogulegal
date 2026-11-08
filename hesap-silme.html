@@ -1,0 +1,55 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SUDOGU – Hesap ve Veri Silme / Account and Data Deletion</title><meta name="robots" content="index,follow"><style>
+:root{--bg:#f6efe6;--card:#fff;--tx:#4a3426;--ac:#ff8a3d;--mut:#8a7565;color-scheme:light dark}
+@media(prefers-color-scheme:dark){:root{--bg:#2a211c;--card:#382c25;--tx:#f3e8dd;--mut:#bba99a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 "Trebuchet MS","Segoe UI",system-ui,sans-serif}
+.w{max-width:760px;margin:0 auto;padding:20px 16px 56px}
+header{text-align:center;padding:18px 0 6px}
+.logo{font-size:34px;font-weight:900;letter-spacing:1px;background:linear-gradient(90deg,#e0a21b,#7a3fb8);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sw{display:flex;gap:8px;justify-content:center;margin:10px 0 4px}
+.sw button{border:2px solid var(--ac);background:transparent;color:var(--tx);border-radius:999px;padding:6px 16px;font:inherit;font-weight:700;cursor:pointer}
+.sw button.on{background:var(--ac);color:#fff}
+article{background:var(--card);border-radius:20px;padding:22px 20px;box-shadow:0 3px 0 #0001;margin-top:12px}
+h1{font-size:26px;margin:.2em 0 .1em}h2{font-size:19px;margin:1.5em 0 .3em;color:var(--ac)}
+p,li{margin:.4em 0}ul{padding-left:1.2em}.mut{color:var(--mut);font-size:14px}
+a{color:#7a3fb8}@media(prefers-color-scheme:dark){a{color:#c9a7ff}}
+.lang-en{display:none}body.en .lang-en{display:block}body.en .lang-tr{display:none}
+nav{text-align:center;margin-top:18px;font-size:15px}nav a{margin:0 8px}
+</style></head><body>
+<div class="w"><header><div class="logo">SUDOGU</div><div class="sw"><button data-l="tr">Türkçe</button><button data-l="en">English</button></div></header>
+<article class="lang-tr"><h1>Hesap ve Veri Silme</h1><p class="mut">Geliştirici: AKM Gamez · Uygulama: SUDOGU (com.sudogu.game) · Son güncelleme: 9 Kasım 2026</p>
+<p>Bu sayfa, <b>SUDOGU</b> oyununda hesabınızın ve verilerinizin nasıl silineceğini açıklar. Oyunu hesap açmadan da oynayabilirsiniz; hesap yalnızca ilerlemeyi buluta yedeklemek içindir.</p>
+<h2>1. Uygulama içinden silme (en hızlısı)</h2>
+<ol><li>SUDOGU’yu açın, <b>Ayarlar</b>’a girin.</li><li><b>İlerlemeni kaydet</b> bölümüne gidin.</li><li><b>Hesabı sil</b>’e dokunun ve onaylayın.</li></ol>
+<p>Silme <b>anında</b> gerçekleşir. Hesabınız ve bulut kaydınız kalıcı olarak silinir ve geri alınamaz.</p>
+<h2>2. E-posta ile talep</h2>
+<p>Uygulamaya erişemiyorsanız <a href="mailto:ypremium0952@gmail.com?subject=SUDOGU%20hesap%20silme">ypremium0952@gmail.com</a> adresine, konu satırına “SUDOGU hesap silme” yazarak ve oyunda giriş yaptığınız hesabın e-posta adresini belirterek yazın. Talebiniz <b>en geç 30 gün</b> içinde sonuçlandırılır ve size bilgi verilir.</p>
+<h2>3. Neler silinir?</h2>
+<ul><li>Hesap kimliğiniz, görünen adınız ve e-posta adresiniz (Firebase Authentication).</li>
+<li>Bulut kaydınız: seviye, kemik ve puanlar, kulübe ilerlemesi, ayarlar, takma ad ve avatar (Cloud Firestore).</li>
+<li>Haftalık/etkinlik sıralamasında hesabınıza bağlı kayıtlar.</li>
+<li>İsterseniz geri bildirim olarak gönderdiğiniz mesajlar (e-posta ile talep edin; 30 gün içinde silinir).</li></ul>
+<h2>4. Neler silinmez / saklanır?</h2>
+<ul><li>Telefonunuzdaki yerel ilerleme: Hesabı sildiğinizde cihazdaki oyun verisi silinmez. Uygulamayı kaldırarak veya uygulama verilerini temizleyerek silebilirsiniz.</li>
+<li>Reklam verileri: Reklamlar Google AdMob ile sunulur; Google’ın kendi politikaları geçerlidir. Reklam kimliğinizi cihaz ayarlarından sıfırlayabilir veya silebilirsiniz.</li>
+<li>Yasal yükümlülükler gerektirmedikçe silinen verilerin yedeği tutulmaz.</li></ul>
+<p>Daha fazla bilgi: <a href="/gizlilik-politikasi">Gizlilik Politikası</a></p></article>
+<article class="lang-en"><h1>Account and Data Deletion</h1><p class="mut">Developer: AKM Gamez · App: SUDOGU (com.sudogu.game) · Last updated: November 9, 2026</p>
+<p>This page explains how to delete your account and data in the game <b>SUDOGU</b>. You can play without an account; an account is only used to back up your progress to the cloud.</p>
+<h2>1. Delete in the app (fastest)</h2>
+<ol><li>Open SUDOGU and go to <b>Settings</b>.</li><li>Open <b>Save your progress</b>.</li><li>Tap <b>Delete account</b> and confirm.</li></ol>
+<p>Deletion takes effect <b>immediately</b>. Your account and cloud save are permanently deleted and cannot be restored.</p>
+<h2>2. Request by email</h2>
+<p>If you can’t access the app, email <a href="mailto:ypremium0952@gmail.com?subject=SUDOGU%20account%20deletion">ypremium0952@gmail.com</a> with the subject “SUDOGU account deletion” and the email address of the account you used to sign in. Your request is completed <b>within 30 days at the latest</b> and we will confirm by email.</p>
+<h2>3. What is deleted</h2>
+<ul><li>Your account ID, display name and email address (Firebase Authentication).</li>
+<li>Your cloud save: level, bones and points, kennel progress, settings, nickname and avatar (Cloud Firestore).</li>
+<li>Weekly/event ranking records linked to your account.</li>
+<li>On request, feedback messages you sent (email us; deleted within 30 days).</li></ul>
+<h2>4. What is not deleted / kept</h2>
+<ul><li>Local progress on your phone: deleting your account does not erase game data stored on the device. Uninstall the app or clear its data to remove it.</li>
+<li>Advertising data: ads are served by Google AdMob and Google’s own policies apply. You can reset or delete your advertising ID in your device settings.</li>
+<li>We keep no backups of deleted data unless the law requires it.</li></ul>
+<p>More information: <a href="/gizlilik-politikasi?lang=en">Privacy Policy</a></p></article>
+<nav><a href="/">SUDOGU</a> · <a href="/gizlilik-politikasi">Gizlilik Politikası / Privacy Policy</a> · <a href="/hizmet-kosullari">Hizmet Koşulları / Terms of Service</a></nav></div><script>(function(){var q=(location.search.match(/lang=(tr|en)/)||[])[1];var l=q||((navigator.language||'tr').slice(0,2)=='tr'?'tr':'en');
+function set(x){document.body.className=x=='en'?'en':'';document.documentElement.lang=x;[].forEach.call(document.querySelectorAll('.sw button'),function(b){b.className=b.dataset.l==x?'on':''})}
+[].forEach.call(document.querySelectorAll('.sw button'),function(b){b.onclick=function(){set(b.dataset.l)}});set(l)})();</script><noscript><style>.lang-en{display:block}</style></noscript></body></html>
